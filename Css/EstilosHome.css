@@ -91,7 +91,7 @@ header .carrito {
     height: 400px;
     display: flex;
     justify-content:center;
-    padding: 3px ;
+    padding-top: 3px ;
 }
 
 .cajaPasos {
