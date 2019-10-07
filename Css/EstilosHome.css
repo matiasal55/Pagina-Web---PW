@@ -75,12 +75,14 @@
 }
 
 .cursos .comprar {
+    display: flex;
     justify-content: center;
     width: 50%;
     font-size: 17px;
     background: white;
     font-size: 16px;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .cursos .comprar:hover{
