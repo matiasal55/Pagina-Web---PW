@@ -1,16 +1,18 @@
 
 
 section {
-    margin: 30px;
     display: flex;
     justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .imagenDelCurso {
     height: 200px;
+
 }
 
-#detallesDelCurso {
+#detallesDelCurso, #contenidos {
     margin-left: 30px;
 }
 
@@ -29,7 +31,7 @@ h2 {
     font-size: 17px;
     background: white;
     cursor: pointer;
-    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 #inscripcion:hover{
@@ -38,3 +40,24 @@ h2 {
     color: #fff;
     border: 1px solid #fff;
 }
+
+ul {
+    list-style: none;
+}
+
+#docente {
+    border: 3px solid black;
+    width: 70%;
+    padding: 20px;
+}
+
+#profesor {
+    height: 100px;
+    float:left;
+    margin-right: 20px;
+}
+
+#estrellas {
+    color: orange;
+}
+
