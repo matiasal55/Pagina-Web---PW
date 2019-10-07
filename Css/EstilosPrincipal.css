@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Lato',sans-serif;
+}
+
+body{
+    background: #D3D3D3;
+}
+
+header{
+    position: sticky;
+    background-color: black;
+    color: white;
+    width: 100%;
+    top: 0;
+    height: 60px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 90px;
+    margin-left: 20px;
+}
+
+header .titulo{
+    font-weight:lighter;
+    font-style: normal;
+    margin-top: 20px;
+    font-size: x-large;
+}
+
+header input[type="button"]{
+    padding: 1px 5px;
+    background-color: #D3D3D3;
+    font-weight:bold;
+    color:black;
+    cursor: pointer;
+}
+
+header .buscar {
+    font-weight:bold;
+    padding: 1px 10px;
+}
+
+header .ladoi{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+header .carrito {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.menuprincipal {
+    transition: all .7s ease;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight:bold;
+    width: 100%;
+}
+
+.menuprincipal a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 10px;
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+    justify-content: center;
+    border-right: 3px solid #D3D3D3;
+
+}
+
+.menuprincipal a:hover {
+    background-color: #D3D3D3;
+    color: black;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: space-around;
+    padding: 10px 0px 10px 0px;
+    background-color:#000;
+    color: white;
+    align-items: center;
+}
+
+footer .menuinferior a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .menuinferior a:hover{
+    text-decoration: underline;
+}
+
+footer .redes{
+    width: 22px;
+}
+
+footer .redessociales a{
+    color: #fff;
+}
