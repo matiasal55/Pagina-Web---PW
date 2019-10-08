@@ -129,6 +129,10 @@ footer .redessociales a{
 
 @media screen and (max-device-width: 600px){
 
+    * {
+        font-size: 40;
+    }
+
     header{
     position: sticky;
     background-color: black;
@@ -160,7 +164,6 @@ footer .redessociales a{
 
     .menuprincipal {
     transition: all .7s ease;
-    font-size: 40;
     background-color: white;
     text-align: center;
     display: flex;
@@ -175,7 +178,6 @@ footer .redessociales a{
     }
 
     footer {
-    font-size: 40;
     display: flex;
     width: 100%;
     height: auto;

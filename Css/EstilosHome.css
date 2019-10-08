@@ -104,4 +104,12 @@
     margin-right: 20px;
     }
 
+@media screen and (max-device-width: 600px){
 
+    .cajaPasos {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+}
