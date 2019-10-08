@@ -1,0 +1,38 @@
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#colorcard {
+    height: 300px;
+    width: 300px;
+
+}
+
+#personalizacion {
+    margin-left: 30px;
+}
+
+#rojo {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+#confirmacion {
+    font-size: 17px;
+    background: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#confirmacion:hover{
+    transition: all .8s ease;
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
