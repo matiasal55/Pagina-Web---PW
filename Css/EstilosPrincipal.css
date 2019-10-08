@@ -57,7 +57,11 @@ header .ladoi{
     justify-content: flex-start;
 }
 
-header .carrito {
+#carrito {
+    font-size: 28;
+}
+
+#carrito img {
     width: 50px;
     height: 50px;
     margin-right: 10px;
@@ -91,6 +95,10 @@ header .carrito {
     color: black;
 }
 
+.menuprincipal form {
+    display: none;
+}
+
 footer {
     display: flex;
     width: 100%;
@@ -117,4 +125,77 @@ footer .redes{
 
 footer .redessociales a{
     color: #fff;
+}
+
+@media screen and (max-device-width: 600px){
+
+    header{
+    position: sticky;
+    background-color: black;
+    color: white;
+    width: 100%;
+    top: 0;
+    min-height: 200px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    }
+
+    header form {
+        display: none;
+    }
+
+    nav form {
+        display: block;
+    }
+
+    .ladoi {
+        width: 50%;
+    }
+
+    #carrito img{
+        min-width: 150px;
+        min-height: 150px;
+    }
+
+    .menuprincipal {
+    transition: all .7s ease;
+    font-size: 40;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-weight:bold;
+    height: auto;
+    }
+
+    .menuprincipal a {
+        padding: 50px;
+    }
+
+    footer {
+    font-size: 40;
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 10px 0px 10px 0px;
+    background-color:#000;
+    color: white;
+    align-items: center;
+    }
+
+    #Integrantes, .menuinferior, .redessociales {
+        border-bottom: 2px solid white;
+        width: 80%;
+        padding: 10px;
+    }
+
+    .redessociales img {
+        min-width: 150px;
+        min-height: 150px;
+        padding-top: 50px;
+    }
+
 }
