@@ -62,3 +62,66 @@ aside{
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-device-width: 600px){
+
+#form2{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Lato;
+    margin-left: 150px;
+    font-size: x-small;
+    margin-left: 300px;
+}
+
+.caja{
+    width: 300px;
+    height: 50px;
+    font-family: Lato;
+}
+
+#texto{
+    font-family: Lato;
+    width: 300px;
+}
+
+#enviar{
+    width: 150px;
+    height: 55px;
+}
+
+#limpiar{
+    width: 290px;
+    height: 55px;
+}
+
+
+aside{
+    position: relative;
+    left: 15%;
+    margin-top: 500px;
+    margin-bottom: 150px;
+}
+
+ .ubi{
+    position: relative;
+    display: flex;
+    width:100%;
+    color:black;
+    background-color: #808080;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    justify-content: center;
+    font-family:Lato;
+    font-weight:bold;
+    font-size: X-small;
+    margin-top: 600px;
+}
+
+#mapa{
+    width: 680px;
+    display: flex;
+    justify-content: center;
+}
