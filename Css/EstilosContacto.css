@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-family: Lato;
     height: 400px;
     margin-left: 150px;
     margin-top: 25px;
@@ -13,11 +12,6 @@
 .caja{
     width: 451px;
     height: 33px;
-    font-family: Lato;
-}
-
-#texto{
-    font-family: Lato;
 }
 
 #enviar{
@@ -36,7 +30,6 @@ aside{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    font-family: Lato;
     height: 270px;
     margin-right: 200px;
     margin-top: 25px;
@@ -51,7 +44,6 @@ aside{
     text-align: center;
     padding: 20px 0px 20px 0px;
     justify-content: center;
-    font-family:Lato;
     font-weight:bold;
     font-size: X-large;
 }
@@ -70,21 +62,19 @@ aside{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-family: Lato;
     margin-left: 150px;
     font-size: x-small;
     margin-left: 300px;
 }
 
 .caja{
-    width: 300px;
+    min-width: 300px;
     height: 50px;
-    font-family: Lato;
 }
 
 #texto{
-    font-family: Lato;
-    width: 300px;
+    min-width: 300px;
+    max-width: 450px;
 }
 
 #enviar{
@@ -96,6 +86,10 @@ aside{
     width: 290px;
     height: 55px;
 }
+
+    form h4{
+        text-align: center;
+    }
 
 
 aside{
@@ -114,7 +108,6 @@ aside{
     text-align: center;
     padding: 10px 0px 10px 0px;
     justify-content: center;
-    font-family:Lato;
     font-weight:bold;
     font-size: X-small;
     margin-top: 600px;
