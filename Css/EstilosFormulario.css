@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Lato',sans-serif;
+}
+
+body{
+    background: #D3D3D3;
+}
+
+header{
+    position: sticky;
+    background-color: black;
+    color: white;
+    width: 100%;
+    top: 0;
+    height: 60px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 90px;
+    margin-left: 20px;
+}
+
+header .titulo{
+    font-weight:lighter;
+    font-style: normal;
+    margin-top: 20px;
+    font-size: x-large;
+}
+
+#buscador {
+    font-size: 15px;
+    background: white;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+#buscador:hover{
+    transition: all .8s ease;
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+header .buscar {
+    font-weight:bold;
+    padding: 1px 10px;
+}
+
+header .ladoi{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#carrito {
+    font-size: 28;
+}
+
+#carrito img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.menuprincipal {
+    transition: all .7s ease;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight:bold;
+    width: 100%;
+    height: 30px;
+}
+
+.menuprincipal a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 10px;
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+    justify-content: center;
+    border-right: 3px solid #D3D3D3;
+    align-items: center;
+}
+
+.menuprincipal a:hover {
+    background-color: #D3D3D3;
+    color: black;
+}
+
+.menuprincipal form {
+    display: none;
+}
+
+#form2{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Lato;
+    height: 400px;
+    margin-left: 150px;
+    margin-top: 25px;
+    margin-bottom: 120px;
+}
+
+.caja{
+    width: 451px;
+    height: 33px;
+    font-family: Lato;
+}
+
+#texto{
+    font-family: Lato;
+}
+
+#enviar{
+    width: 200px;
+    height: 25px;
+}
+
+#limpiar{
+    width: 250px;
+    height: 25px;
+}
+
+
+aside{
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: Lato;
+    height: 270px;
+    margin-right: 200px;
+    margin-top: 25px;
+}
+
+.ubi{
+    display: flex;
+    width:100%;
+    color:black;
+    background-color: #808080;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    justify-content: center;
+    font-family:Lato;
+    font-weight:bold;
+    font-size: X-large
+}
+
+#mapa{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: space-around;
+    padding: 10px 0px 10px 0px;
+    background-color:#000;
+    color: white;
+    align-items: center;
+}
+
+footer .menuinferior a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .menuinferior a:hover{
+    text-decoration: underline;
+}
+
+footer .redes{
+    width: 22px;
+}
+
+footer .redessociales a{
+    color: #fff;
+}
