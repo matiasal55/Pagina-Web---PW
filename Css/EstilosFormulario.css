@@ -40,6 +40,7 @@ aside{
     height: 270px;
     margin-right: 200px;
     margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .ubi{
@@ -52,7 +53,7 @@ aside{
     justify-content: center;
     font-family:Lato;
     font-weight:bold;
-    font-size: X-large
+    font-size: X-large;
 }
 
 #mapa{
