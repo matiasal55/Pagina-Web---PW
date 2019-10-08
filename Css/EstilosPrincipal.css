@@ -71,6 +71,7 @@ header .carrito {
     justify-content: center;
     font-weight:bold;
     width: 100%;
+    height: 30px;
 }
 
 .menuprincipal a {
@@ -82,7 +83,7 @@ header .carrito {
     text-align: center;
     justify-content: center;
     border-right: 3px solid #D3D3D3;
-
+    align-items: center;
 }
 
 .menuprincipal a:hover {
