@@ -64,17 +64,15 @@ aside{
     justify-content: space-between;
     margin-left: 150px;
     font-size: x-small;
-    margin-left: 300px;
 }
 
 .caja{
-    min-width: 300px;
+    min-width: 500px;
     height: 50px;
 }
 
 #texto{
-    min-width: 300px;
-    max-width: 450px;
+    max-width: 500px;
 }
 
 #enviar{
