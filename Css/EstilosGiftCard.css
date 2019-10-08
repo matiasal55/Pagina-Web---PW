@@ -22,14 +22,14 @@ section {
     margin-left: 30px;
 }
 
-#personalizacion h1, p {
-    margin-bottom: 20px;
+#personalizacion h1, #personalizacion p, #personalizacion div, #personalizacion input {
+    margin-bottom: 10px;
 }
 
 #personalizacion input{
     border: 1px solid black;
     width: 75%;
-    height: 25px;
+    height: 20px;
 }
 
 #personalizacion input[type="radio"]{
