@@ -17,13 +17,30 @@
 #enviar{
     width: 200px;
     height: 25px;
+    background-color: white;
+    color: black;
 }
 
 #limpiar{
     width: 250px;
     height: 25px;
+    background-color: white;
+    color: black;
 }
 
+#enviar:hover{
+    transition: all .8s ease;
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+
+#limpiar:hover{
+    transition: all .8s ease;
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
 
 aside{
     float: right;

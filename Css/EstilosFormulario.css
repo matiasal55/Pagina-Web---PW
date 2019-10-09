@@ -24,14 +24,20 @@
 }
 
 #boton{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     margin-left: 120px;
     display: inline-block;
     border-radius: 8px;
     padding: 8px 40px;
     text-align: center;
     font-weight: bold;
+}
+#boton:hover{
+    transition: all .8s ease;
+    background: black;
+    color: white;
+    border: 1px solid white;
 }
 
 footer{
