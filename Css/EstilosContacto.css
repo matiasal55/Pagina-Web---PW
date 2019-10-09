@@ -14,6 +14,12 @@
     height: 33px;
 }
 
+#texto{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 40px;
+}
+
 #enviar{
     width: 200px;
     height: 25px;
