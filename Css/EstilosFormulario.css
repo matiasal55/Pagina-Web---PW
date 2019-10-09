@@ -1,0 +1,11 @@
+#inscripcion {
+    width: 100px;
+    display: grid;
+    grid-template-columns: 1fr; 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 20px;
+}
+
+#inscripcion input {
+    margin: 20px;
+}
