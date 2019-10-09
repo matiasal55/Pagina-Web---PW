@@ -77,8 +77,6 @@ section {
     margin: 10px;
 }
 
-
-
 #confirmacion input{
     font-size: 17px;
     background: white;
@@ -91,5 +89,19 @@ section {
     background: #000;
     color: #fff;
     border: 1px solid #fff;
+}
+
+@media screen and (max-device-width:600px){
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cuadrados, .circulos {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin;
+}
 }
 
