@@ -72,8 +72,6 @@ aside{
 }
 
 #mapa{
-    margin-top: 25px;
-    margin-bottom: 25px;
     display: flex;
     justify-content: center;
 }
@@ -135,7 +133,9 @@ aside{
 }
 
 #mapa{
-    width: 680px;
-    display: flex;
-    justify-content: center;
+    width: 600px;
+    height: auto;
+    margin:auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
