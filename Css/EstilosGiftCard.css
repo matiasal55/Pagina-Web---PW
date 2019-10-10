@@ -90,11 +90,42 @@ section {
         flex-direction: column;
     }
 
+    #vistaprevia {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    #colorcard {
+        min-width: 500px;
+        min-height: 500px;
+    }
+
     .cuadrados, .circulos {
     display: block;
-    width: 150px;
-    height: 150px;
-    margin;
-}
+    width: 200px;
+    height: 200px;
+    }
+
+    #personalizacion input {
+        height: 100px;
+    }
+
+    #personalizacion input[type="radio"]{
+    height: 50px;
+    }
+
+    #personalizacion div {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .elecciones {
+        display: flex;
+        align-items: center;
+    }
+
 }
 
