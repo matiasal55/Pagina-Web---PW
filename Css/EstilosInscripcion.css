@@ -54,15 +54,6 @@
     border: 1px solid white;
 }
 
-
-
-@media screen and (min-device-width:1000px){
-footer{
-    position: absolute;
-    bottom: 0;
-}
-}
-
 @media screen and (max-device-width: 600px){
 
 #inscripcion {
