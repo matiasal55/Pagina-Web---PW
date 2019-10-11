@@ -24,3 +24,25 @@
     font-size: 15px;
     font-weight: bold;
 }
+
+@media screen and (max-device-width:600px){
+
+    .cursos {
+        display: grid;
+        margin: auto;
+    }
+
+    .cajaCursos {
+    margin: 30px;
+    }
+
+    .cursos .titulo2 {
+        font-size: 40;
+    }
+
+    .cursos .foto {
+        width: 300px;
+        height: 250px;
+    }
+
+}
