@@ -22,14 +22,14 @@
 
 #enviar{
     width: 200px;
-    height: 25px;
+    height: 27px;
     background-color: white;
     color: black;
 }
 
 #limpiar{
     width: 250px;
-    height: 25px;
+    height: 27px;
     background-color: white;
     color: black;
 }
@@ -54,7 +54,7 @@ aside{
     justify-content: space-between;
     flex-direction: column;
     height: 270px;
-    margin-right: 200px;
+    margin-right: 150px;
     margin-top: 25px;
     margin-bottom: 25px;
 }
