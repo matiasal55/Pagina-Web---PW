@@ -28,7 +28,8 @@
 @media screen and (max-device-width:600px){
 
     .cursos {
-    display: grid;
+        display: grid;
+        margin: auto;
     }
 
     .cajaCursos {
