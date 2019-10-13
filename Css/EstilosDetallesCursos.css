@@ -1,0 +1,100 @@
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imagenDelCurso {
+    height: 200px;
+
+}
+
+#detallesDelCurso, #contenidos {
+    margin-left: 30px;
+}
+
+h1 {
+    font-size: 28;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 18;
+    margin-bottom: 10px;
+}
+
+#inscripcion {
+    width: 50%;
+    font-size: 17px;
+    background: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#inscripcion:hover{
+    transition: all .8s ease;
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+.encabezado {
+    border: 2px solid grey;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+}
+
+#docente {
+    border: 3px solid black;
+    width: 70%;
+    padding: 20px;
+}
+
+#profesor {
+    height: 100px;
+    float:left;
+    margin-right: 20px;
+}
+
+#estrellas {
+    color: orange;
+}
+
+#informacionProfesor {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-device-width:600px){
+    .imagenDelCurso {
+        width: 400px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    #curso {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #inscripcion {
+    min-width: 300px;
+    height: 75px;
+    background: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 40;
+    }
+
+}

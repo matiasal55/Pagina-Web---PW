@@ -5,13 +5,14 @@
         <title> Aperture Academy </title>
         <meta charset="utf-8">
         <meta name="keywords" content="curso">
+        <link rel="stylesheet" href="Css/EstilosInscripcion.css">
         <link rel="stylesheet" href="Css/EstilosPrincipal.css">
-        <link rel="stylesheet" href="Css/EstilosCursos.css">
-        <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="img/logo1.ico">
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     </head>
 
     <body>
+
         <header>
             <div class="ladoi">
                 <div><img src="img/logo.png" class="logo"></div>
@@ -19,7 +20,17 @@
             </div>
             <div>
                 <form>
-                    <input type="search" class="buscar" placeholder="Buscar">
+                    <input type="search" class="buscar" placeholder="Buscar" list="listaBusqueda">
+                    <datalist id="listaBusqueda">
+                       <option>HTML</option>
+                        <option>Java</option>
+                        <option>Arduino</option>
+                        <option>Photoshop</option>
+                        <option>Illustrator</option>
+                        <option>CorelDraw</option>
+                        <option>Word</option>
+                        <option>Excel</option>
+                    </datalist>
                     <input type="button" id="buscador" value="Buscar">
                 </form>
             </div>
@@ -41,69 +52,31 @@
             </div>
         </nav>
 
-        <section class="cursos">
-            <div class="cajaCursos">
-                <form action="cursos/Curso-HTML.html">
-                    <input type="image" class="foto" src="img/html.PNG" href="cursos/Curso-HTML.html">
+        <section>
+            <h2 class="titulocurso"> Curso de HTML</h2> <br>
+            <h3 class="titulocurso"> Inscripción </h3>
+            <section>
+                <form>
+                <div id="inscripcion">
+                <input type="text" class="primeraFila" placeholder="Nombre">
+                <input type="text" class="primeraFila" placeholder="Apellido">
+                <input type="text" class="primeraFila" placeholder="DNI"><span class="addOrDelete">-</span>
+                <input type="text" class="segundaFila" placeholder="Nombre">
+                <input type="text" class="segundaFila" placeholder="Apellido">
+                <input type="text" class="segundaFila" placeholder="DNI"><span class="addOrDelete">-</span>
+                <input type="text" class="terceraFila" placeholder="Nombre">
+                <input type="text" class="terceraFila" placeholder="Apellido">
+                <input type="text" class="terceraFila" placeholder="DNI"><span class="addOrDelete">-</span>
+                    </div>
+                    <div id="botonAgregar"><span class="addOrDelete">+</span>Agregar persona</div>
                 </form>
-                <h1 class="titulo2">Curso de HTML</h1>
-            </div>
-
-            <div class="cajaCursos">
-                <form action="cursos/Curso-Java.html">
-                    <input type="image" class="foto" src="img/Java.jpg" href="cursos/Curso-Java.html">
-                </form>
-                <h1 class="titulo2">Curso de JAVA</h1>
-            </div>
-
-            <div class="cajaCursos">
-                <form action="cursos/Curso-Arduino.html">
-                    <input type="image" class="foto" src="img/arduino.jpg" href="cursos/Curso-Arduino.html">
-                </form>
-                <h1 class="titulo2">Curso de Arduino</h1>
-            </div>
+            </section>
         </section>
-
-        <section class="cursos">
-            <div class="cajaCursos">
-                <form action="cursos/Curso-Photoshop.html">
-                    <input type="image" class="foto" src="img/photoshop.png" href="cursos/Curso-photoshop.html">
-                </form>
-                <h1 class="titulo2">Curso de PHOTOSHOP</h1>
-            </div>
-
-            <div class="cajaCursos">
-<<<<<<< HEAD
-                <form action="cursos/Curso-illustrator.html">
-                    <input type="image" class="foto" src="img/Illustrator.png" href="cursos/Curso-illustrator.html">
-=======
-                <form action="cursos/Curso-Illustrator.html">
-                    <input type="image" class="foto" src="img/Illustrator.png" href="cursos/Curso-photoshop.html">
->>>>>>> origin/master
-                </form>
-                <h1 class="titulo2">Curso de ILLUSTRATOR</h1>
-            </div>
-
-        </section>
-
-        <section class="cursos">
-            <div class="cajaCursos">
-                <form action="cursos/Curso-Word.html">
-                    <input type="image" class="foto" src="img/Word.png" href="cursos/Curso-Word.html">
-                </form>
-                <h1 class="titulo2">Curso de WORD</h1>
-            </div>
-
-            <div class="cajaCursos">
-                <form action="cursos/Curso-Excel.html">
-                    <input type="image" class="foto" src="img/Excel.png" href="cursos/Curso-Excel.html">
-                </form>
-                <h1 class="titulo2">Curso de EXCEL</h1>
-            </div>
-        </section>
-
-        <br><br>
-
+        <div id="abajo">
+        <h3 id="precio"> $... </h3>
+        <button id="boton">INSCRIBIRSE</button>
+        </div>
+        <br>
         <footer>
             <div id="Integrantes">
                 Integrantes del equipo:
@@ -130,4 +103,5 @@
             </div>
         </footer>
     </body>
+
 </html>

@@ -15,7 +15,6 @@ section {
     height: 300px;
     width: 300px;
     background-color: blue;
-
 }
 
 #personalizacion {
@@ -29,7 +28,8 @@ section {
 #personalizacion input{
     border: 1px solid black;
     width: 75%;
-    height: 20px;
+    height: 23px;
+    background: #fff;
 }
 
 #personalizacion input[type="radio"]{
@@ -77,19 +77,55 @@ section {
     margin: 10px;
 }
 
-
-
-#confirmacion input{
-    font-size: 17px;
-    background: white;
-    cursor: pointer;
-    margin-bottom: 20px;
-}
-
 #confirmacion:hover{
     transition: all .8s ease;
     background: #000;
     color: #fff;
     border: 1px solid #fff;
+}
+
+@media screen and (max-device-width:600px){
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #vistaprevia {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    #colorcard {
+        min-width: 500px;
+        min-height: 500px;
+    }
+
+    .cuadrados, .circulos {
+    display: block;
+    width: 200px;
+    height: 200px;
+    }
+
+    #personalizacion input {
+        height: 100px;
+    }
+
+    #personalizacion input[type="radio"]{
+    height: 50px;
+    }
+
+    #personalizacion div {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .elecciones {
+        display: flex;
+        align-items: center;
+    }
+
 }
 

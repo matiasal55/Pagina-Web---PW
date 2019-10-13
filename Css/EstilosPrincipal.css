@@ -36,7 +36,9 @@ header .titulo{
     font-size: 15px;
     background: white;
     cursor: pointer;
-    margin: 0 auto;
+    margin: auto;
+    padding: 1px 5px 0px 5px;
+    font-family:serif;
 }
 
 #buscador:hover{
@@ -48,7 +50,8 @@ header .titulo{
 
 header .buscar {
     font-weight:bold;
-    padding: 1px 10px;
+    padding: 2px 10px 0px 5px;
+    font-family:serif;
 }
 
 header .ladoi{
@@ -163,14 +166,14 @@ footer .redessociales a{
     }
 
     .menuprincipal {
-    transition: all .7s ease;
-    background-color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-weight:bold;
-    height: auto;
+        transition: all .7s ease;
+        background-color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-weight:bold;
+        height: auto;
     }
 
     .menuprincipal a {
@@ -178,14 +181,14 @@ footer .redessociales a{
     }
 
     footer {
-    display: flex;
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    padding: 10px 0px 10px 0px;
-    background-color:#000;
-    color: white;
-    align-items: center;
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 10px 0px 10px 0px;
+        background-color:#000;
+        color: white;
+        align-items: center;
     }
 
     #Integrantes, .menuinferior, .redessociales{
@@ -196,7 +199,6 @@ footer .redessociales a{
 
     .redessociales {
         border-bottom: 0;
-
     }
 
     .redessociales img {

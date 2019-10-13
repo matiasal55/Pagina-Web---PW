@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="keywords" content="curso">
         <link rel="stylesheet" href="../Css/EstilosPrincipal.css">
-        <link rel="stylesheet" href="../Css/EstilosCursos.css">
+        <link rel="stylesheet" href="../Css/EstilosDetallesCursos.css">
         <link rel="shortcut icon" type="image/x-icon" href="img/logo1.ico">
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     </head>
@@ -20,7 +20,17 @@
             </div>
             <div>
                 <form>
-                    <input type="search" class="buscar" placeholder="Buscar">
+                    <input type="search" class="buscar" placeholder="Buscar" list="listaBusqueda">
+                    <datalist id="listaBusqueda">
+                        <option>HTML</option>
+                        <option>Java</option>
+                        <option>Arduino</option>
+                        <option>Photoshop</option>
+                        <option>Illustrator</option>
+                        <option>CorelDraw</option>
+                        <option>Word</option>
+                        <option>Excel</option>
+                    </datalist>
                     <input type="button" id="buscador" value="Buscar">
                 </form>
             </div>
@@ -33,8 +43,9 @@
                 <a href="../Cursos.html">Cursos</a>
                 <a href="../Calendario.html">Calendario</a>
                 <a href="../gift-card.html">Gift Card</a>
-                <a href=" ">Inscripción</a>
-                <a href=" ">Contacto</a>
+
+                <a href="../inscripcion.html">Inscripción</a>
+                <a href="../Contacto.html">Contacto</a>
                 <form id="buscadorWeb">
                     <input type="search" class="buscar" placeholder="Buscar">
                     <input type="button" id="buscador" value="Buscar">
@@ -42,50 +53,52 @@
             </div>
         </nav>
 
-        <section>
+        <section id="curso">
             <img src="../img/html.png" class="imagenDelCurso">
             <div>
             <div id="detallesDelCurso">
                 <h1>CURSO DE HTML</h1>
-                <h2>Valor: $1500</h2>
-                    <h2>Duración del curso: 70hs</h2>
-                    <h2>Descripción del curso: </h2>
+                <h2>Valor: $1890</h2>
+                    <h2>Duración del Curso: 25hs</h2>
+                    <h2>Descripción del Curso: </h2>
                     <h2>Requisitos: ninguno.</h2>
-                <input type="button" id="inscripcion" value="Inscribirse">
+                <form action="../Inscripcion.html">
+                <input type="submit" id="inscripcion" value="Inscribirse">
+                </form>
             </div>
             <div id="contenidos">
                 <h1>CONTENIDOS POR CLASE</h1>
                 <ul>
-                    <div><div class="encabezado"><li>Introduccion</li><a href="" class="masInfo">Mas</a></div>
+                    <div><div class="encabezado"><li>Introduccion.</li><a href="" class="masInfo">Mas</a></div>
                         <div class="lista">
                             <ul>
-                            <li>Conociendo el mundo de HTML:  Qué es un lenguaje de marcado</li>
-                            <li>Implementación</li>
-                            <li>Tipos de Navegadores</li>
-                            <li>Trabajando en Nuestro Primer Proyecto</li>
-                            <li>Creación de nuestro primer Archivo</li>
-                            <li>Qué es CSS</li>
-                            <li>Elementos de texto</li>
+                            <li>Conociendo el mundo de HTML:  Qué es un lenguaje de marcado.</li>
+                            <li>Implementación.</li>
+                            <li>Tipos de Navegadores.</li>
+                            <li>Trabajando en Nuestro Primer Proyecto.</li>
+                            <li>Creación de nuestro primer Archivo.</li>
+                            <li>Qué es CSS.</li>
+                            <li>Elementos de texto.</li>
                             </ul></div></div>
-                    <div><div class="encabezado"> <li>Elementos</li><a href="" class="masInfo">Mas</a></div>
+                    <div><div class="encabezado"> <li>Elementos.</li><a href="" class="masInfo">Mas</a></div>
                          <div class="lista"><ul>
-                            <li>Vínculos</li>
-                            <li>Qué la ruta de un vínculo</li>
-                            <li>Principales atributos de los vínculos</li>
-                            <li>Profundizando en algunas propiedades de CSS</li>
-                            <li>El mundo de las imágenes</li>
-                            <li>Propiedades de css sobre las imágenes</li>
-                            <li>Transformar una imágen en vínculo</li>
+                            <li>Vínculos.</li>
+                            <li>Qué la ruta de un vínculo.</li>
+                            <li>Principales atributos de los vínculos.</li>
+                            <li>Profundizando en algunas propiedades de CSS.</li>
+                            <li>El mundo de las imágenes.</li>
+                            <li>Propiedades de css sobre las imágenes.</li>
+                            <li>Transformar una imágen en vínculo.</li>
                              </ul></div></div>
-                    <div><div class="encabezado"><li>Formularios</li><a href="" class="masInfo">Mas</a></div>
+                    <div><div class="encabezado"><li>Formularios.</li><a href="" class="masInfo">Mas</a></div>
                          <div class="lista"><ul>
-                            <li>Elementos de Formulario</li>
-                            <li>Atributos</li>
-                            <li>Validación sobre formularios</li>
-                            <li>GET vs POST</li>
-                            <li>Implementaciones y usos</li>
-                            <li>Aplicando CSS sobre los formularios</li>
-                            <li>Centrar formulario en nuestro documento </li>
+                            <li>Elementos de Formulario.</li>
+                            <li>Atributos.</li>
+                            <li>Validación sobre formularios.</li>
+                            <li>GET vs POST.</li>
+                            <li>Implementaciones y usos.</li>
+                            <li>Aplicando CSS sobre los formularios.</li>
+                            <li>Centrar formulario en nuestro documento.</li>
                              </ul></div></div>
                 </ul>
             </div>
@@ -95,10 +108,10 @@
             <div id="docente">
                 <h1>DOCENTE</h1>
                 <img src="../img/profesor.jpg" id="profesor">
-                <h2>Gerardo Barbosa</h2>
+                <h2> Luis Sanchez </h2>
                 <p id="estrellas">★★★★★</p>
                 <br>
-                <p>His goal is to combine proven methodology with out-of-the-box thinking to work out the most accurate solution to the problems that are affecting the client's growth and his development. Throughout 13 years, he has developed the concept of a passionate teaching at La Matanza University. He loves teaching his students as well as learning from them. He has the opportunity of constantly learning, researching and improvimg his own skills and knowledge. He conveys knowledge in the most effective way which engages students, to help them think objectively. </p>
+                <p>Su objetivo es combinar una metodología probada con un pensamiento innovador para encontrar la solución más precisa a los problemas que afectan el crecimiento y el desarrollo del alumno. A lo largo de 13 años, ha desarrollado el concepto de una enseñanza apasionada y disfruta enseñando a sus alumnos y aprendiendo de ellos. Tiene la oportunidad de aprender constantemente, investigar y mejorar sus propias habilidades y conocimientos. Transmite el conocimiento de la manera más efectiva que involucra a los alumnos, para ayudarlos a pensar objetivamente. </p>
             </div>
         </section>
 
@@ -114,9 +127,10 @@
                     <a href="../Home.html">Home</a>
                     <br><a href="../Cursos.html">Cursos</a>
                     <br><a href="../Calendario.html">Calendario</a>
-                    <br><a href=" ">Gift Card</a>
-                    <br><a href=" ">Inscripción</a>
-                    <br><a href=" ">Contacto</a>
+
+                    <br><a href="../gift-card.html">Gift Card</a>
+                    <br><a href="../inscripcion.html">Inscripción</a>
+                    <br><a href="../Contacto.html">Contacto</a>
             </div>
 
             <div class="redessociales">

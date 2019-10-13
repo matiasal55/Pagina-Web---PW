@@ -14,16 +14,39 @@
     height: 33px;
 }
 
+#texto{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 40px;
+}
+
 #enviar{
     width: 200px;
-    height: 25px;
+    height: 27px;
+    background-color: white;
+    color: black;
 }
 
 #limpiar{
     width: 250px;
-    height: 25px;
+    height: 27px;
+    background-color: white;
+    color: black;
 }
 
+#enviar:hover{
+    transition: all .8s ease;
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+
+#limpiar:hover{
+    transition: all .8s ease;
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
 
 aside{
     float: right;
@@ -31,7 +54,7 @@ aside{
     justify-content: space-between;
     flex-direction: column;
     height: 270px;
-    margin-right: 200px;
+    margin-right: 150px;
     margin-top: 25px;
     margin-bottom: 25px;
 }
@@ -49,8 +72,6 @@ aside{
 }
 
 #mapa{
-    margin-top: 25px;
-    margin-bottom: 25px;
     display: flex;
     justify-content: center;
 }
@@ -112,7 +133,9 @@ aside{
 }
 
 #mapa{
-    width: 680px;
-    display: flex;
-    justify-content: center;
+    width: 600px;
+    height: auto;
+    margin:auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
