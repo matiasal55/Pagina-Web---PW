@@ -7,6 +7,7 @@
         <meta name="keywords" content="curso">
         <link rel="stylesheet" href="Css/EstilosPrincipal.css">
         <link rel="stylesheet" href="Css/EstilosGiftCard.css">
+        <script type="text/javascript" src="js/giftcard.js"></script>
         <link rel="shortcut icon" type="image/x-icon" href="img/logo1.ico">
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     </head>
@@ -49,7 +50,16 @@
 
         <section>
             <div id="vistaprevia">
-                <span id="colorcard"></span>
+                <span id="colorcard">
+                    <div id="cardLogo">
+                        <div><img src="img/logo.png" class="logo"></div>
+                        <div> Aperture Academy </div>
+                        </div>
+
+                    <p class="textoCard">Nombre: <input type="text" name="nombre" id="nombre" disabled onkeypress="completarNombre()"></p>
+                    <p class="textoCard">Valor: <input type="number" name="monto" id="monto" disabled></p>
+
+                </span>
                 <p>Vista previa</p>
             </div>
             <div id="personalizacion"><h1>Personalización de Gift Card</h1>
@@ -58,41 +68,41 @@
                     <p>Color: </p>
                         <div class="elecciones">
                         <div><span class="circulos" id="rojo"></span>
-                            <input type="radio" name="color">
+                            <input type="radio" name="color" onclick="cambiarColor('1')">
                         </div>
                         <div>
                             <span class="circulos" id="azul"></span>
-                            <input type="radio" name="color">
+                            <input type="radio" name="color" onclick="cambiarColor('2')">
                         </div>
                         <div>
                             <span class="circulos" id="verde"></span>
-                            <input type="radio" name="color">
+                            <input type="radio" name="color" onclick="cambiarColor('3')">
                         </div>
                         <div>
                             <span class="circulos" id="negro"></span>
-                            <input type="radio" name="color">
+                            <input type="radio" name="color" onclick="cambiarColor('4')">
                         </div>
                     </div>
                     <p>Tamaño de fuente: </p>
                         <div class="elecciones">
-                        <div><span>20px</span>
-                            <input type="radio" name="color">
+                        <div><span>12px</span>
+                            <input type="radio" name="tamano" onclick="cambiarTamano('1')">
                         </div>
                         <div>
-                            <span>28px</span>
-                            <input type="radio" name="color">
+                            <span>14px</span>
+                            <input type="radio" name="tamano" onclick="cambiarTamano('2')">
                         </div>
                         <div>
-                            <span>32px</span>
-                            <input type="radio" name="color">
+                            <span>18px</span>
+                            <input type="radio" name="tamano" onclick="cambiarTamano('3')">
                         </div>
                         <div>
-                            <span>40px</span>
-                            <input type="radio" name="color">
+                            <span>20px</span>
+                            <input type="radio" name="tamano" onclick="cambiarTamano('4')">
                         </div>
                             <div>
-                            <span>68px</span>
-                            <input type="radio" name="color">
+                            <span>24px</span>
+                            <input type="radio" name="tamano" onclick="cambiarTamano('5')">
                         </div>
                     </div>
                     <p>Monto: $ <input type="number" min="50" name="monto"></p>
@@ -119,19 +129,19 @@
                         <div class="elecciones">
                             <div>
                             <span class="cuadrados" id="rojo"></span>
-                            <input type="radio" name="fondo">
+                            <input type="radio" name="fondo" onclick="cambiarFondo('1')">
                         </div>
                         <div>
                             <span class="cuadrados" id="azul"></span>
-                            <input type="radio" name="fondo">
+                            <input type="radio" name="fondo" onclick="cambiarFondo('2')">
                         </div>
                         <div>
                             <span class="cuadrados" id="verde"></span>
-                            <input type="radio" name="fondo">
+                            <input type="radio" name="fondo" onclick="cambiarFondo('3')">
                         </div>
                         <div>
                             <span class="cuadrados" id="negro"></span>
-                            <input type="radio" name="fondo">
+                            <input type="radio" name="fondo" onclick="cambiarFondo('4')">
                         </div>
                     </div>
                     <p><input type="button" id="confirmacion" value="Confirmar"></p>

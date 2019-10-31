@@ -5,6 +5,13 @@ section {
     margin-bottom: 50px;
 }
 
+
+#vistaprevia div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #vistaprevia p {
     text-align: center;
     margin-top: 10px;
@@ -12,9 +19,13 @@ section {
 
 #colorcard {
     display: block;
-    height: 300px;
+    height: 200px;
     width: 300px;
     background-color: blue;
+}
+
+#cardlogo img{
+    width: 100px;
 }
 
 #personalizacion {
