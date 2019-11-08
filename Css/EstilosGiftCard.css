@@ -17,6 +17,11 @@ section {
     margin-top: 10px;
 }
 
+#textoCard {
+    display: flex;
+    flex-direction: column;
+}
+
 #colorcard {
     display: block;
     height: 200px;
@@ -26,6 +31,11 @@ section {
 
 #cardlogo img{
     width: 100px;
+}
+
+#fecha {
+    font-size: 10px;
+    text-align: right;
 }
 
 #personalizacion {

@@ -49,6 +49,16 @@ ul {
     justify-content: space-between;
     padding: 5px;
     margin: 5px;
+    width: 500px;
+}
+
+.lista {
+    display: none;
+}
+
+#contenidos {
+    display: flex;
+    flex-direction: column;
 }
 
 #docente {
