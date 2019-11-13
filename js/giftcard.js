@@ -81,6 +81,7 @@ $(document).ready(function(){
 
        if(valorNombre!="" && valorSaldo!=""){
             mensaje="<p>Muchas gracias por su compra. Su gift card será enviada a su casilla de correo</p>";
+            $("form").trigger("reset");
        }
       if(valorNombre=="")
            mensaje+="<p>Falta completar nombre</p>";
