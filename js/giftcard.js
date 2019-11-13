@@ -78,16 +78,45 @@ $(document).ready(function(){
        var mensaje="";
        var valorNombre=$("#nombreCompleto").val();
        var valorSaldo=$("#saldo").val();
+       var error=0;
 
-       if(valorNombre!="" && valorSaldo!=""){
+      if(valorNombre==""){
+          mensaje+="<p>Falta completar nombre</p>";
+          error++;
+      }
+
+       if(!($(".color").is(":checked"))) {
+           mensaje+="<p>Falta seleccionar color de texto</p>";
+           error++;
+       }
+
+       if(!($(".tamano").is(":checked"))) {
+           mensaje+="<p>Falta seleccionar tamaño</p>";
+           error++;
+       }
+
+       if(valorSaldo==""){
+           mensaje+="<p>Falta completar saldo</p>";
+           error++;
+       }
+
+       if(!($(".ubicacion").is(":checked"))) {
+           mensaje+="<p>Falta seleccionar ubicación</p>";
+           error++;
+       }
+
+       if(!($(".fondo").is(":checked"))) {
+           mensaje+="<p>Falta seleccionar fondo</p>";
+           error++;
+       }
+
+       if(error==0){
             mensaje="<p>Muchas gracias por su compra. Su gift card será enviada a su casilla de correo</p>";
             $("form").trigger("reset");
        }
-      if(valorNombre=="")
-           mensaje+="<p>Falta completar nombre</p>";
-       if(valorSaldo=="")
-           mensaje+="<p>Falta completar saldo</p>";
+
        $("#mensaje").html(mensaje);
+
 
        /*if($("#nombreCompleto").val()=="" && contadorMensajeOK==0){
            mensaje="<p>Faltó poner el nombre del destinatario</p>";
