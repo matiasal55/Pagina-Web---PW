@@ -55,10 +55,10 @@
                     <div id="textoCard">
                     <div id="cardLogo">
                         <div><img src="img/logo.png" class="logo"></div>
-                        <div> Aperture Academy </div>
+                        <div id="tituloLogo"> Aperture Academy </div>
                         </div>
 
-                    <p id="nombre">Nombre</p>
+                    <p id="nombre">NOMBRE</p>
                     <p id="valor">Valor</p>
                     <div id="fecha">
                         <p><script src="js/fecha.js"></script></p>
@@ -114,16 +114,16 @@
                     <p>Ubicación</p>
                         <div class="elecciones">
                             <div>
-                            <span class="cuadrados" id="rojo"></span>
-                            <input type="radio" name="ubicacion" onclick="cambiarPosicionIzquierda()">
+                            Izquierda
+                            <input type="radio" name="ubicacion" onclick="cambiarPosicion(1)">
                         </div>
                         <div>
-                            <span class="cuadrados" id="azul"></span>
-                            <input type="radio" name="ubicacion" onclick="cambiarPosicionIzquierda()">
+                            Centro
+                            <input type="radio" name="ubicacion" onclick="cambiarPosicion(2)">
                         </div>
                         <div>
-                            <span class="cuadrados" id="verde"></span>
-                            <input type="radio" name="ubicacion" onclick="cambiarPosicionIzquierda()">
+                            Derecha
+                            <input type="radio" name="ubicacion" onclick="cambiarPosicion(3)">
                         </div>
                     </div>
                     <p>Fondo: </p>
@@ -146,6 +146,7 @@
                         </div>
                     </div>
                     <p><input type="button" id="confirmacion" value="Confirmar"></p>
+                    <div class="error" id="mensaje"></div>
                 </form>
             </div>
         </section>

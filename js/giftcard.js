@@ -1,7 +1,3 @@
-$(document).ready(function(){
-   $("body").
-});
-
 function cambiarColorRojo(){
         document.getElementById("textoCard").style="color: red";
     }
@@ -48,18 +44,74 @@ function cambiarFondo(color){
 }
 
 function completarNombre(){
+    if($("#nombreCompleto").val()!=""){
 	var nombre=document.getElementById("nombreCompleto").value;
-	document.getElementById("nombre").innerHTML=nombre;
+    var nombreDos=nombre.toUpperCase();
+	document.getElementById("nombre").innerHTML=nombreDos;
+    }
+    else {
+        document.getElementById("nombre").innerHTML="NOMBRE";
+    }
 }
 
 function completarMonto(){
+    if($("#saldo").val()!=""){
 	var nombre=document.getElementById("saldo").value;
 	document.getElementById("valor").innerHTML=nombre;
+    }
+    else {
+        document.getElementById("valor").innerHTML="Valor";
+    }
 }
 
-function cambiarPosicionIzquierda(){
-
-        document.getElementById("fecha").style.textAlign="left";
+function cambiarPosicion(valor){
+        if(valor==1)
+            document.getElementById("fecha").style.textAlign="left";
+        else if(valor==2)
+            document.getElementById("fecha").style.textAlign="center";
+        else if(valor==3)
+            document.getElementById("fecha").style.textAlign="right";
     }
 
+$(document).ready(function(){
+   $("#confirmacion").click(function(){
+       var mensaje="";
+       var valorNombre=$("#nombreCompleto").val();
+       var valorSaldo=$("#saldo").val();
+
+       if(valorNombre!="" && valorSaldo!=""){
+            mensaje="<p>Muchas gracias por su compra. Su gift card será enviada a su casilla de correo</p>";
+       }
+      if(valorNombre=="")
+           mensaje+="<p>Falta completar nombre</p>";
+       if(valorSaldo=="")
+           mensaje+="<p>Falta completar saldo</p>";
+       $("#mensaje").html(mensaje);
+
+       /*if($("#nombreCompleto").val()=="" && contadorMensajeOK==0){
+           mensaje="<p>Faltó poner el nombre del destinatario</p>";
+           $("#personalizacion").append(mensaje);
+           contadorMensajeOK++;
+       }
+       else {
+           contadorMensajeOK=0;
+       }
+
+       if($("#saldo").val()=="" && contadorMensajeOK==0 || contadorMensajeOK==1){
+           mensaje="<p>Faltó poner el monto</p>";
+           $("#personalizacion").append(mensaje);
+           contadorMensajeOK++;
+       }
+       else {
+           contadorMensajeOK=0;
+       }
+
+       if($("#nombreCompleto").val()!="" && $("#saldo").val()!="" && contadorMensajeOK==0){
+        mensaje="<p>Muchas gracias por su compra. Su gift card será enviada a su casilla de correo</p>";
+        $("#personalizacion").append(mensaje);
+        contadorMensajeOK++;
+       }*/
+
+   });
+});
 

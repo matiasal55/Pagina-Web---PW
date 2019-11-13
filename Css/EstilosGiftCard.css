@@ -6,21 +6,23 @@ section {
 }
 
 
-#vistaprevia div {
+#nombre, #valor, #cardLogo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#vistaprevia p {
+#nombre, #valor {
     text-align: center;
     margin-top: 10px;
 }
 
+/*
 #textoCard {
     display: flex;
     flex-direction: column;
 }
+*/
 
 #colorcard {
     display: block;
@@ -34,12 +36,14 @@ section {
 }
 
 #fecha {
-    font-size: 10px;
-    text-align: right;
+    font-size: 12px;
+    margin: 10px;
+    text-align: center;
 }
 
 #personalizacion {
     margin-left: 30px;
+    width: 300px;
 }
 
 #personalizacion h1, #personalizacion p, #personalizacion div, #personalizacion input {
@@ -118,14 +122,31 @@ section {
     }
 
     #colorcard {
-        min-width: 500px;
+        min-width: 900px;
         min-height: 500px;
+    }
+
+    #nombre, #valor {
+        display: flex;
+        align-items: center;
+    }
+
+    #cardLogo img{
+        min-width: 300px;
+    }
+
+    #tituloLogo {
+        font-size: 50;
     }
 
     .cuadrados, .circulos {
     display: block;
     width: 200px;
     height: 200px;
+    }
+
+    #personalizacion {
+        width: 90%;
     }
 
     #personalizacion input {
