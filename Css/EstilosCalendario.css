@@ -3,9 +3,13 @@ body {
     font-size: 14px;
   }
 
+header {
+    z-index: 2;
+}
+
   #calendar {
     max-width: 900px;
     margin: 0 auto;
     padding-top: 50px;
-
+      z-index: 0;
   }
