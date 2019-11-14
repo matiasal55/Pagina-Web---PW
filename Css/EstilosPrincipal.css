@@ -154,8 +154,19 @@ footer .redessociales a{
         display: none;
     }
 
-    nav form {
-        visibility: visible;
+    #buscadorWeb {
+        display: block;
+        padding: 50;
+    }
+
+    .buscar {
+        min-width: 600px;
+        height: 100px;
+    }
+
+    #buscadorBoton {
+        width: 200px;
+        height: 80px;
     }
 
     .ladoi {
@@ -175,11 +186,21 @@ footer .redessociales a{
         flex-direction: column;
         flex-wrap: wrap;
         font-weight:bold;
+        align-items: center;
         height: auto;
     }
 
     .menuprincipal a {
         padding: 50px;
+        border: 0;
+        display: none;
+    }
+
+    #iconoMenu div{
+        width: 150px;
+        height: 10px;
+        background-color: black;
+        margin: 25px 0;
     }
 
     footer {
@@ -208,5 +229,7 @@ footer .redessociales a{
         min-height: 150px;
         padding-top: 50px;
     }
+
+
 
 }
