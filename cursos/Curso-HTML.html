@@ -9,6 +9,9 @@
         <link rel="stylesheet" href="../Css/EstilosDetallesCursos.css">
         <link rel="shortcut icon" type="image/x-icon" href="img/logo1.ico">
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="../js/cursosdetalles.js"></script>
+        <script type="text/javascript" src="../js/principal.js"></script>
     </head>
 
     <body>
@@ -39,16 +42,20 @@
 
         <nav>
             <div class="menuprincipal">
-                <a href="../Home.html">Home</a>
-                <a href="../Cursos.html">Cursos</a>
-                <a href="../Calendario.html">Calendario</a>
-                <a href="../gift-card.html">Gift Card</a>
-
-                <a href="../inscripcion.html">Inscripción</a>
-                <a href="../Contacto.html">Contacto</a>
+                <div id="iconoMenu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <a class="menu" href="../Home.html">Home</a>
+                <a class="menu" href="../Cursos.html">Cursos</a>
+                <a class="menu" href="../Calendario.html">Calendario</a>
+                <a class="menu" href="../gift-card.html">Gift Card</a>
+                <a class="menu" href=" ">Inscripción</a>
+                <a class="menu" href=" ">Contacto</a>
                 <form id="buscadorWeb">
                     <input type="search" class="buscar" placeholder="Buscar">
-                    <input type="button" id="buscador" value="Buscar">
+                    <input type="button" id="buscadorBoton" value="Buscar">
                 </form>
             </div>
         </nav>
@@ -69,8 +76,10 @@
             <div id="contenidos">
                 <h1>CONTENIDOS POR CLASE</h1>
                 <ul>
-                    <div><div class="encabezado"><li>Introduccion.</li><a href="" class="masInfo">Mas</a></div>
-                        <div class="lista">
+                    <div><div class="encabezado" id="encabezado1"><li>Introduccion</li>
+                        <a class="masInfo" id="masDetalles1">Mas</a></div>
+<!--                        <input type="button" id="masDetalles1" value="Mas informacion"></div>-->
+                        <div class="lista" id="lista1">
                             <ul>
                             <li>Conociendo el mundo de HTML:  Qué es un lenguaje de marcado.</li>
                             <li>Implementación.</li>
@@ -80,25 +89,27 @@
                             <li>Qué es CSS.</li>
                             <li>Elementos de texto.</li>
                             </ul></div></div>
-                    <div><div class="encabezado"> <li>Elementos.</li><a href="" class="masInfo">Mas</a></div>
-                         <div class="lista"><ul>
-                            <li>Vínculos.</li>
-                            <li>Qué la ruta de un vínculo.</li>
-                            <li>Principales atributos de los vínculos.</li>
-                            <li>Profundizando en algunas propiedades de CSS.</li>
-                            <li>El mundo de las imágenes.</li>
-                            <li>Propiedades de css sobre las imágenes.</li>
-                            <li>Transformar una imágen en vínculo.</li>
+                    <div><div class="encabezado" id="encabezado2"> <li>Elementos</li>
+                        <a class="masInfo" id="masDetalles2">Mas</a></div>
+                         <div class="lista" id="lista2"><ul>
+                            <li>Vínculos</li>
+                            <li>Qué la ruta de un vínculo</li>
+                            <li>Principales atributos de los vínculos</li>
+                            <li>Profundizando en algunas propiedades de CSS</li>
+                            <li>El mundo de las imágenes</li>
+                            <li>Propiedades de css sobre las imágenes</li>
+                            <li>Transformar una imágen en vínculo</li>
                              </ul></div></div>
-                    <div><div class="encabezado"><li>Formularios.</li><a href="" class="masInfo">Mas</a></div>
-                         <div class="lista"><ul>
-                            <li>Elementos de Formulario.</li>
-                            <li>Atributos.</li>
-                            <li>Validación sobre formularios.</li>
-                            <li>GET vs POST.</li>
-                            <li>Implementaciones y usos.</li>
-                            <li>Aplicando CSS sobre los formularios.</li>
-                            <li>Centrar formulario en nuestro documento.</li>
+                    <div><div class="encabezado" id="encabezado3"><li>Formularios</li>
+                        <a class="masInfo" id="masDetalles3">Mas</a></div>
+                         <div class="lista" id="lista3"><ul>
+                            <li>Elementos de Formulario</li>
+                            <li>Atributos</li>
+                            <li>Validación sobre formularios</li>
+                            <li>GET vs POST</li>
+                            <li>Implementaciones y usos</li>
+                            <li>Aplicando CSS sobre los formularios</li>
+                            <li>Centrar formulario en nuestro documento </li>
                              </ul></div></div>
                 </ul>
             </div>

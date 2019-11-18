@@ -20,7 +20,6 @@ h1 {
 }
 
 h2 {
-    font-size: 18;
     margin-bottom: 10px;
 }
 
@@ -49,6 +48,21 @@ ul {
     justify-content: space-between;
     padding: 5px;
     margin: 5px;
+    width: 500px;
+    cursor: pointer;
+}
+
+.masInfo {
+    cursor: pointer;
+}
+
+.lista {
+    display: none;
+}
+
+#contenidos {
+    display: flex;
+    flex-direction: column;
 }
 
 #docente {
@@ -86,6 +100,14 @@ ul {
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .encabezado {
+        width: 90%;
+    }
+
+    .lista ul li{
+        font-size: 25;
     }
 
     #inscripcion {
