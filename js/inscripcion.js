@@ -23,5 +23,16 @@ function agregarPersona(){
 	var uno = document.getElementById("inscripcion");
 	var dos = uno.cloneNode(true);
     $(dos).children().val("");
-	document.getElementById("inscripcion").appendChild(dos);
+	document.getElementById("contenedor").appendChild(dos);
+}
+
+function eliminarPersona() {
+    var uno=this.parentElement;
+    var dos=$(".formulario").first();
+    if(uno.is(dos))
+        $(uno).remove();
+//        $(uno).children().val("");
+//    else
+
+
 }

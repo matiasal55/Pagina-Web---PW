@@ -11,7 +11,6 @@
         <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="js/inscripcion.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="../js/principal.js"></script>
     </head>
 
@@ -61,11 +60,12 @@
             <h3 class="titulocurso"> Inscripción </h3>
             <section>
                 <form>
-                <div id="inscripcion">
+                    <div id="contenedor">
+                <div id="inscripcion" class="formulario">
                 <input type="text" class="primeraFila" placeholder="Nombre">
                 <input type="text" class="primeraFila" placeholder="Apellido">
-                <input type="text" class="primeraFila" placeholder="DNI"><span class="addOrDelete">-</span>
-                    </div>
+                <input type="text" class="primeraFila" placeholder="DNI"><span class="addOrDelete" onclick="eliminarPersona()">-</span>
+                        </div></div>
                     <div id="botonAgregar"><input type="button" class="addOrDelete" id="campoPersona" value="+" onclick="agregarPersona()">Agregar persona</div>
                 </form>
             </section>
