@@ -1,5 +1,5 @@
 $(document).ready(function(){
    $("#iconoMenu").click(function(){
-      $(".menu").toggle(500);
+        $(".menu").toggle(500);
    });
 });
