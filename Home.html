@@ -7,10 +7,19 @@
         <meta name="keywords" content="curso">
         <link rel="stylesheet" href="Css/EstilosPrincipal.css">
         <link rel="stylesheet" href="Css/EstilosHome.css">
+        <link rel="stylesheet" href="Css/nivo-slider.css"/>
+        <link rel="stylesheet" href="Css/default.css"/>
         <link rel="shortcut icon" type="image/x-icon" href="img/logo1.ico">
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
-        <script type="text/javascript" src="../js/principal.js"></script>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/principal.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+        <script type="text/javascript">
+            $(window).load(function() {
+                $('#slider').nivoSlider();
+            });
+        </script>
     </head>
 
     <body>
@@ -59,11 +68,16 @@
             </div>
         </nav>
 
-        <div class="imagen">
-            <img src="img/compu2.jpg">
-        </div>
-
-        <br>
+            <section class="contenedor">
+                <article class="slider-wrapper theme-default">
+                    <div id="slider" class="nivoSlider">
+                        <img src="img/toystory.jpg" alt="" />
+                        <img src="img/up.jpg" alt="" title="si queremos ponerle un texto" />
+                        <img src="img/walle.jpg" alt="" />
+                        <img src="img/nemo.jpg" alt="" title="titulo" />
+                    </div>
+                </article>
+            </section>
 
         <section class="cajaPasos">
             <div class="pasos"> PASO 1:
