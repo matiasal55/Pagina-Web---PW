@@ -24,15 +24,8 @@ header{
 }
 
 header .logo {
-    width: 90px;
+    max-width: 300px;
     margin-left: 20px;
-}
-
-header .titulo{
-    font-weight:lighter;
-    font-style: normal;
-    margin-top: 20px;
-    font-size: x-large;
 }
 
 #buscador {
@@ -65,6 +58,7 @@ header .ladoi{
 
 #carrito {
     font-size: 28;
+    display: flex;
 }
 
 #carrito img {

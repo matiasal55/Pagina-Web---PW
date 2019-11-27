@@ -2,8 +2,11 @@ header {
     z-index: 2;
 }
 
-.contenedor{
-    padding-top: 50px;
+.contenedor {
+        padding-top: 50px;
+}
+
+#slider{
     z-index: 0;
 }
 
