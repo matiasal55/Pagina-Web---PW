@@ -7,19 +7,19 @@
         <meta name="keywords" content="curso">
         <link rel="stylesheet" href="../Css/EstilosPrincipal.css">
         <link rel="stylesheet" href="../Css/EstilosDetallesCursos.css">
-        <link rel="shortcut icon" type="image/x-icon" href="img/logo1.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="../img/logo1.ico">
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
         <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="../js/cursosdetalles.js"></script>
-        <script type="text/javascript" src="../js/principal.js"></script>
+        <script type="text/javascript" src="../js/menuresponsive.js"></script>
+        <script type="text/javascript" src="../js/carrito.js"></script>
     </head>
 
     <body>
 
         <header>
             <div class="ladoi">
-                <div><img src="../img/logo.png" class="logo"></div>
-                <div class="titulo"> Aperture Academy </div>
+                <div><img src="../img/logoaperture.png" class="logo"></div>
             </div>
             <div>
                 <form>
@@ -37,7 +37,7 @@
                     <input type="button" id="buscador" value="Buscar">
                 </form>
             </div>
-            <div id="carrito">0<img src="../img/carrito%202.png"></div>
+            <div id="carrito"><div id="acumulador"></div><img src="../img/carrito%202.png"></div>
         </header>
 
         <nav>
@@ -51,8 +51,8 @@
                 <a class="menu" href="../Cursos.html">Cursos</a>
                 <a class="menu" href="../Calendario.html">Calendario</a>
                 <a class="menu" href="../gift-card.html">Gift Card</a>
-                <a class="menu" href=" ">Inscripción</a>
-                <a class="menu" href=" ">Contacto</a>
+                <a class="menu" href="../inscripcion.html">Inscripción</a>
+                <a class="menu" href="../Contacto.html">Contacto</a>
                 <form id="buscadorWeb">
                     <input type="search" class="buscar" placeholder="Buscar">
                     <input type="button" id="buscadorBoton" value="Buscar">
@@ -69,15 +69,16 @@
                     <h2>Duración del Curso: 18hs</h2>
                     <h2>Descripción del Curso: Inicializarse en el mundo de la edición fotográfica</h2>
                     <h2>Requisitos: Preferentemente con conocimientos de fotografía</h2>
-                <form action="../Inscripcion.html">
-                <input type="submit" id="inscripcion" value="Inscribirse">
+                <form>
+                <input type="button" id="inscripcion" value="Inscribirse" class="comprar">
                 </form>
+                <div id="mensajeEvento">Muchas gracias por anotarse al curso. <br>El mismo empezará el 19 de marzo de 2020. Para más información, puede <a href=../Contacto.html>contactarnos</a> o puede ver nuestro <a href="../Calendario.html">Calendario</a></div>
             </div>
             <div id="contenidos">
                 <h1>CONTENIDOS POR CLASE</h1>
                 <ul>
-                    <div><div class="encabezado"><li>Introduccion</li><a class="masInfo">Mas</a></div>
-                         <div class="lista"><ul>
+                    <div><div class="encabezado" id="encabezado1"><li>Introduccion</li><a class="masInfo" id="masDetalles1">Mas</a></div>
+                         <div class="lista" id="lista1"><ul>
                             <li>Imágenes vectoriales y Mapa de bits. </li>
                             <li>Propiedades de las imágenes digitales. </li>
                             <li>Obtención de imágenes. </li>
@@ -85,8 +86,8 @@
                             <li>Herramientas de Selección por Color. </li>
                             <li>La Herramienta Mano. </li>
                              </ul></div></div>
-                    <div><div class="encabezado"><li>Retoque y edición</li><a class="masInfo">Mas</a></div>
-                         <div class="lista"><ul>
+                    <div><div class="encabezado" id="encabezado2"><li>Retoque y edición</li><a class="masInfo" id="masDetalles2">Mas</a></div>
+                         <div class="lista" id="lista2"><ul>
                             <li>Herramientas de Edición. </li>
                             <li>Herramientas de Corrección de Pieles. </li>
                             <li>El concepto de capa y las opciones de la paleta de capas. </li>
@@ -95,8 +96,8 @@
                             <li>Capas de Formas.</li>
                             <li>Las herramientas y los distintos modos de ajuste de imagen.</li>
                              </ul></div></div>
-                    <div><div class="encabezado"><li>Edición Avanzada de Capas, filtros y estilos</li><a class="masInfo">Mas</a></div>
-                         <div class="lista"><ul>
+                    <div><div class="encabezado" id="encabezado3"><li>Edición Avanzada de Capas, filtros y estilos</li><a class="masInfo" id="masDetalles3">Mas</a></div>
+                         <div class="lista" id="lista3"><ul>
                             <li>Estilos y efectos de capa. </li>
                             <li>Texto y Capas.</li>
                             <li>Filtros.</li>

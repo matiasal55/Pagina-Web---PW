@@ -1,15 +1,47 @@
 $(document).ready(function() {
 
     $('#calendar').fullCalendar({
-      defaultDate: '2019-01-12',
+      defaultDate: '2020-03-09',
+//        defaultDate: moment().format("YYYY-MM-DD"),
       editable: true,
       eventLimit: true, // allow "more" link when too many events
       events: [
         {
-          title: 'All Day Event',
-          start: '2019-01-01'
+          title: 'Curso HTML - Inicio',
+            url:'cursos/Curso-HTML.html',
+          start: '2020-03-09T13:00:00'
         },
-        {
+          {
+          title: 'Curso Java - Inicio',
+            url:'cursos/Curso-Java.html',
+          start: '2020-03-11T13:00:00'
+        },
+          {
+          title: 'Curso Arduino - Inicio',
+            url:'cursos/Curso-Arduino.html',
+          start: '2020-03-13T13:00:00'
+        },
+          {
+          title: 'Curso Excel - Inicio',
+            url:'cursos/Curso-Excel.html',
+          start: '2020-03-17T09:00:00'
+        },
+          {
+          title: 'Curso Word - Inicio',
+            url:'cursos/Curso-Word.html',
+          start: '2020-03-17T15:00:00'
+        },
+          {
+          title: 'Curso Illustrator - Inicio',
+            url:'cursos/Curso-Illustrator.html',
+          start: '2020-03-19T09:00:00'
+        },
+          {
+          title: 'Curso Photoshop - Inicio',
+            url:'cursos/Curso-photoshop.html',
+          start: '2020-03-19T15:00:00'
+        },
+        /*{
           title: 'Long Event',
           start: '2019-01-07',
           end: '2019-01-10'
@@ -63,7 +95,7 @@ $(document).ready(function() {
           title: 'Curso HTML',
           url: 'http://google.com/',
           start: '2019-12-28'
-        }
+        }*/
       ]
     });
 

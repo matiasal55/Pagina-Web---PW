@@ -7,19 +7,19 @@
         <meta name="keywords" content="curso">
         <link rel="stylesheet" href="../Css/EstilosPrincipal.css">
         <link rel="stylesheet" href="../Css/EstilosDetallesCursos.css">
-        <link rel="shortcut icon" type="image/x-icon" href="img/logo1.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="../img/logo1.ico">
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
         <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="../js/cursosdetalles.js"></script>
-        <script type="text/javascript" src="../js/principal.js"></script>
+        <script type="text/javascript" src="../js/menuresponsive.js"></script>
+        <script type="text/javascript" src="../js/carrito.js"></script>
     </head>
 
     <body>
 
         <header>
             <div class="ladoi">
-                <div><img src="../img/logo.png" class="logo"></div>
-                <div class="titulo"> Aperture Academy </div>
+                <div><img src="../img/logoaperture.png" class="logo"></div>
             </div>
             <div>
                 <form>
@@ -37,7 +37,7 @@
                     <input type="button" id="buscador" value="Buscar">
                 </form>
             </div>
-            <div id="carrito">0<img src="../img/carrito%202.png"></div>
+            <div id="carrito"><div id="acumulador"></div><img src="../img/carrito%202.png"></div>
         </header>
 
         <nav>
@@ -51,8 +51,8 @@
                 <a class="menu" href="../Cursos.html">Cursos</a>
                 <a class="menu" href="../Calendario.html">Calendario</a>
                 <a class="menu" href="../gift-card.html">Gift Card</a>
-                <a class="menu" href=" ">Inscripción</a>
-                <a class="menu" href=" ">Contacto</a>
+                <a class="menu" href="../inscripcion.html">Inscripción</a>
+                <a class="menu" href="../Contacto.html">Contacto</a>
                 <form id="buscadorWeb">
                     <input type="search" class="buscar" placeholder="Buscar">
                     <input type="button" id="buscadorBoton" value="Buscar">
@@ -69,14 +69,16 @@
                     <h2>Duración del Curso: 108hs</h2>
                     <h2>Descripción del Curso: Aprende los conceptos iniciales de Java</h2>
                     <h2>Requisitos: ninguno.</h2>
-                <form action="../Inscripcion.html">
-                <input type="submit" id="inscripcion" value="Inscribirse">
+                <form>
+                <input type="button" id="inscripcion" value="Inscribirse" class="comprar">
                 </form>
+                <div id="mensajeEvento">Muchas gracias por anotarse al curso. <br>El mismo empezará el 11 de marzo de 2020. Para más información, puede <a href=../Contacto.html>contactarnos</a> o puede ver nuestro <a href="../Calendario.html">Calendario</a></div>
             </div>
             <div id="contenidos">
                 <h1>CONTENIDOS POR CLASE</h1>
                 <ul>
-                    <div><div class="encabezado"><li>Introduccion</li><a class="masInfo" id="masDetalles1">Mas</a></div>
+                    <div><div class="encabezado"  id="encabezado1"><li>Introduccion</li>
+                        <a class="masInfo" id="masDetalles1">Mas</a></div>
                          <div class="lista" id="lista1"><ul>
                             <li>¿Qué es Java? </li>
                             <li>Organización</li>
@@ -85,7 +87,8 @@
                             <li>IDE a utilizar </li>
                             <li>Trabajando en Nuestro Primer Proyecto</li>
                              </ul></div></div>
-                    <div><div class="encabezado"><li>Sintaxis y semántica</li><a class="masInfo" id="masDetalles2">Mas</a></div>
+                    <div><div class="encabezado"  id="encabezado2"><li>Sintaxis y semántica</li>
+                        <a class="masInfo" id="masDetalles2">Mas</a></div>
                          <div class="lista" id="lista2"><ul>
                             <li>Identificador</li>
                             <li>Definición de variables en Java</li>
@@ -95,7 +98,8 @@
                             <li>Bloques de Código</li>
                             <li>Expresiones y comentarios</li>
                              </ul></div></div>
-                    <div><div class="encabezado"><li>Interfaz gráfica de usuario</li><a id="masDetalles3" class="masInfo">Mas</a></div>
+                    <div><div class="encabezado" id="encabezado3"><li>Interfaz gráfica de usuario</li>
+                        <a id="masDetalles3" class="masInfo">Mas</a></div>
                          <div class="lista" id="lista3"><ul>
                             <li>Contenedores gráficos y componentes</li>
                             <li>Eventos</li>

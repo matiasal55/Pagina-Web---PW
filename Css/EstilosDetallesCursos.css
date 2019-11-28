@@ -5,6 +5,12 @@ section {
     margin-bottom: 50px;
 }
 
+#curso {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .imagenDelCurso {
     height: 200px;
 
@@ -36,6 +42,10 @@ h2 {
     background: #000;
     color: #fff;
     border: 1px solid #fff;
+}
+
+#mensajeEvento {
+    margin: 20px 0px 20px 0px;
 }
 
 ul {

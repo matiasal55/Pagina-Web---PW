@@ -3,6 +3,9 @@ var mostrar2=0;
 var mostrar3=0;
 
 $(document).ready(function(){
+
+    $("#mensajeEvento").css("display","none");
+
     $("#encabezado1").click(function(){
        if(mostrar1==0){
            $("#lista1").toggle(function(){
@@ -58,6 +61,10 @@ $(document).ready(function(){
             mostrar3=0;
        });
     }
+    });
+
+    $("#inscripcion").click(function(){
+        $("#mensajeEvento").css("display","block");
     });
 
 });

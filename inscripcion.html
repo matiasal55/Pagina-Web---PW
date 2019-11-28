@@ -11,22 +11,21 @@
         <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="js/inscripcion.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
-        <script type="text/javascript" src="../js/principal.js"></script>
+        <script type="text/javascript" src="js/menuresponsive.js"></script>
+        <script type="text/javascript" src="js/carrito.js"></script>
     </head>
 
     <body>
 
         <header>
             <div class="ladoi">
-                <div><img src="img/logo.png" class="logo"></div>
-                <div class="titulo"> Aperture Academy </div>
+                <div><img src="img/logoaperture.png" class="logo"></div>
             </div>
             <div>
                 <form>
                     <input type="search" class="buscar" placeholder="Buscar" list="listaBusqueda">
                     <datalist id="listaBusqueda">
-                       <option>HTML</option>
+                        <option>HTML</option>
                         <option>Java</option>
                         <option>Arduino</option>
                         <option>Photoshop</option>
@@ -38,7 +37,7 @@
                     <input type="button" id="buscador" value="Buscar">
                 </form>
             </div>
-            <div id="carrito">0<img src="img/carrito%202.png"></div>
+            <div id="carrito"><div id="acumulador"></div><img src="img/carrito%202.png"></div>
         </header>
 
         <nav>
@@ -48,12 +47,12 @@
                     <div></div>
                     <div></div>
                 </div>
-                <a class="menu" href="../Home.html">Home</a>
-                <a class="menu" href="../Cursos.html">Cursos</a>
-                <a class="menu" href="../Calendario.html">Calendario</a>
-                <a class="menu" href="../gift-card.html">Gift Card</a>
-                <a class="menu" href=" ">Inscripción</a>
-                <a class="menu" href=" ">Contacto</a>
+                <a class="menu" href="Home.html">Home</a>
+                <a class="menu" href="Cursos.html">Cursos</a>
+                <a class="menu" href="Calendario.html">Calendario</a>
+                <a class="menu" href="gift-card.html">Gift Card</a>
+                <a class="menu" href="inscripcion.html">Inscripción</a>
+                <a class="menu" href="Contacto.html">Contacto</a>
                 <form id="buscadorWeb">
                     <input type="search" class="buscar" placeholder="Buscar">
                     <input type="button" id="buscadorBoton" value="Buscar">
@@ -66,18 +65,20 @@
             <h3 class="titulocurso"> Inscripción </h3>
             <section>
                 <form>
-                <div id="inscripcion">
+                    <div id="contenedor">
+                <div id="inscripcion" class="formulario">
                 <input type="text" class="primeraFila" placeholder="Nombre">
                 <input type="text" class="primeraFila" placeholder="Apellido">
-                <input type="text" class="primeraFila" placeholder="DNI"><span class="addOrDelete">-</span>
-                    </div>
-                    <div id="botonAgregar"><input type="button" class="addOrDelete" id="campoPersona" value="+" onclick="agregarPersona()">Agregar persona</div>
+                <input type="text" class="primeraFila" placeholder="DNI"><span class="addOrDelete" onclick="eliminarPersona(this,1750)">-</span>
+                        </div></div>
+                    <div id="botonAgregar"><input type="button" class="addOrDelete" id="campoPersona" value="+" onclick="agregarPersona(1750)">Agregar persona</div>
                 </form>
             </section>
         </section>
         <div id="abajo">
-        <h3 id="precio"> 1750 </h3>
-        <button id="boton">INSCRIBIRSE</button>
+        <h3 id="precio"> $1750 </h3>
+        <input id="boton" value="INSCRIBIRSE" onclick="personasInscriptas()">
+        <div id="personasInscriptas"></div>
         </div>
         <br>
         <footer>

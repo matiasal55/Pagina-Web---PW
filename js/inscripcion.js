@@ -1,27 +1,48 @@
-//function agregarPersona(){
-//    var campoNombre=document.createElement("Input");
-//    campoNombre.setAttribute("type","text");
-//    campoNombre.setAttribute("placeholder","Nombre");
-//    var campoApellido=document.createElement("Input");
-//    campoApellido.setAttribute("type","text");
-//    campoApellido.setAttribute("placeholder","Apellido");
-//    var campoDNI=document.createElement("Input");
-//    campoDNI.setAttribute("type","text");
-//    campoDNI.setAttribute("placeholder","DNI");
-//    var botonEliminar=document.createElement("Input");
-//    botonEliminar.setAttribute("type","button");
-//    botonEliminar.setAttribute("value","-");
-//    botonEliminar.setAttribute("class","addOrDelete");
-//    botonEliminar.setAttribute("onclick","eliminarCampo");
-//    document.getElementById("inscripcion").appendChild(campoNombre);
-//    document.getElementById("inscripcion").appendChild(campoApellido);
-//    document.getElementById("inscripcion").appendChild(campoDNI);
-//    document.getElementById("inscripcion").appendChild(botonEliminar);
-//}
+var num=1;
 
-function agregarPersona(){
+function agregarPersona(precio){
 	var uno = document.getElementById("inscripcion");
 	var dos = uno.cloneNode(true);
     $(dos).children().val("");
-	document.getElementById("inscripcion").appendChild(dos);
+	document.getElementById("contenedor").appendChild(dos);
+    num++;
+    document.getElementById("precio").innerHTML="$"+num*precio;
+
+}
+
+function eliminarPersona(elemento,precio) {
+    var uno =elemento.parentNode;
+    var tamanio= $(".formulario").length;
+    if(tamanio>1){
+        uno.remove();
+    }else
+        $(".primeraFila").val("");
+    if(num>1)
+        num--;
+    document.getElementById("precio").innerHTML="$"+num*precio;
+}
+
+function personasInscriptas() {
+    var personas=document.getElementsByClassName("primeraFila");
+    var cantidadDePersonas=$(".formulario").length;
+    var mensaje="";
+    var camposCompletos=false;
+
+    for(var i=0;i<personas.length;i++){
+        if(personas[i].value!="")
+            camposCompletos=true;
+        else
+            camposCompletos=false;
+    }
+
+    if(camposCompletos){
+        mensaje="<p>Personas inscriptas: </p>"
+        for(var i=0;i<cantidadDePersonas;i++){
+            mensaje+="Nombre: " + personas[0].value + " - Apellido: " + personas[1].value + " - DNI: " + personas[2].value + ".";
+            mensaje+="<br>";
+        }
+    }
+    else
+        mensaje="<p>No hay personas inscriptas.</p>"
+    document.getElementById("personasInscriptas").innerHTML=mensaje;
 }
