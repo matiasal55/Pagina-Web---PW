@@ -1,5 +1,11 @@
 $(document).ready(function(){
-   $("#iconoMenu").click(function(){
-        $(".menu").toggle(500);
-   });
+    $(window).resize(function(){
+        if($(this).width()>=600){
+        $("#iconoMenu").click(function(){
+                $(".menu").toggle(500);
+            });
+        }
+    });
 });
+
+

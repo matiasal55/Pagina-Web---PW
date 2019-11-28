@@ -12,6 +12,7 @@
         <script type="text/javascript" src="js/inscripcion.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
         <script type="text/javascript" src="js/principal.js"></script>
+        <script type="text/javascript" src="js/carrito.js"></script>
     </head>
 
     <body>
@@ -36,7 +37,7 @@
                     <input type="button" id="buscador" value="Buscar">
                 </form>
             </div>
-            <div id="carrito">0<img src="img/carrito%202.png"></div>
+            <div id="carrito"><div id="acumulador"></div><img src="img/carrito%202.png"></div>
         </header>
 
         <nav>
@@ -76,7 +77,8 @@
         </section>
         <div id="abajo">
         <h3 id="precio"> $1750 </h3>
-        <button id="boton">INSCRIBIRSE</button>
+        <input id="boton" value="INSCRIBIRSE" onclick="personasInscriptas()">
+        <div id="personasInscriptas"></div>
         </div>
         <br>
         <footer>

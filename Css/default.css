@@ -96,3 +96,18 @@ Supports Thumbs: true
 	width: 120px;
 	height: auto;
 }
+
+@media screen and (max-device-width: 600px) {
+    .theme-default .nivo-controlNav a {
+        display: none;
+    }
+
+    .theme-default .nivo-directionNav a {
+        min-height: 200px;
+        border-radius: 0%;
+        min-width: 100px;
+        background-color: transparent;
+    }
+
+
+}

@@ -47,7 +47,7 @@ function completarNombre(){
     if($("#nombreCompleto").val()!=""){
 	var nombre=document.getElementById("nombreCompleto").value;
     var nombreDos=nombre.toUpperCase();
-	document.getElementById("nombre").innerHTML=nombreDos;
+	document.getElementById("nombre").innerHTML="NOMBRE: "+nombreDos;
     }
     else {
         document.getElementById("nombre").innerHTML="NOMBRE";
@@ -56,11 +56,11 @@ function completarNombre(){
 
 function completarMonto(){
     if($("#saldo").val()!=""){
-	var nombre=document.getElementById("saldo").value;
-	document.getElementById("valor").innerHTML=nombre;
+	var saldo=document.getElementById("saldo").value;
+	document.getElementById("valor").innerHTML="Valor: $ "+saldo;
     }
     else {
-        document.getElementById("valor").innerHTML="Valor";
+        document.getElementById("valor").innerHTML="Valor: $ ";
     }
 }
 
