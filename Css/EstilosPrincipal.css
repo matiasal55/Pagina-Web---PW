@@ -197,6 +197,10 @@ footer .redessociales a{
         margin: 25px 0;
     }
 
+    .menu {
+        display: none;
+    }
+
     footer {
         display: flex;
         width: 100%;
