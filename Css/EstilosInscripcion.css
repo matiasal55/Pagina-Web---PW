@@ -24,6 +24,7 @@
     color: white;
     font-size: 31;
     text-align: center;
+    cursor: pointer;
 
 }
 
@@ -46,6 +47,7 @@
     margin-bottom: 50px;
     text-align: center;
     font-weight: bold;
+    cursor: pointer;
 
 }
 
@@ -59,6 +61,7 @@
     background: black;
     color: white;
     border: 1px solid white;
+    cursor: pointer;
 }
 
 @media screen and (max-device-width: 600px){
