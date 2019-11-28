@@ -12,12 +12,12 @@ function agregarPersona(precio){
 
 function eliminarPersona(elemento,precio) {
     var uno =elemento.parentNode;
-    var dos= document.getElementsByClassName("formulario").firstChild;
-    if(!(Object.is(uno,dos))){
+    var tamanio= $(".formulario").length;
+    if(tamanio>1){
         uno.remove();
     }else
-        uno.children().val("");
-    num--;
+        $(".primeraFila").val("");
+    if(num>1)
+        num--;
     document.getElementById("precio").innerHTML="$"+num*precio;
-
 }
