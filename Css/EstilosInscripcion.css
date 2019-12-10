@@ -6,7 +6,7 @@
     width: 100px;
     display: grid;
     grid-template-columns: 300px 300px 300px 75px;
-    grid-template-rows: 75px 75px 75px;
+    grid-template-rows: 75px;
     margin: 20px;
 }
 
@@ -24,6 +24,7 @@
     color: white;
     font-size: 31;
     text-align: center;
+    cursor: pointer;
 
 }
 
@@ -46,7 +47,13 @@
     margin-bottom: 50px;
     text-align: center;
     font-weight: bold;
+    cursor: pointer;
 
+}
+
+#personasInscriptas {
+    padding: 8px 40px;
+    margin-bottom: 50px;
 }
 
 #boton:hover{
@@ -54,6 +61,7 @@
     background: black;
     color: white;
     border: 1px solid white;
+    cursor: pointer;
 }
 
 @media screen and (max-device-width: 600px){

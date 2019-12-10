@@ -7,16 +7,27 @@
         <meta name="keywords" content="curso">
         <link rel="stylesheet" href="Css/EstilosPrincipal.css">
         <link rel="stylesheet" href="Css/EstilosHome.css">
+        <link rel="stylesheet" href="Css/nivo-slider.css"/>
+        <link rel="stylesheet" href="Css/default.css"/>
         <link rel="shortcut icon" type="image/x-icon" href="img/logo1.ico">
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/menuresponsive.js"></script>
+        <script type="text/javascript" src="js/carrito.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+        <script type="text/javascript">
+            $(window).load(function() {
+                $('#slider').nivoSlider();
+            });
+        </script>
     </head>
 
     <body>
 
         <header>
             <div class="ladoi">
-                <div><img src="img/logo.png" class="logo"></div>
-                <div class="titulo"> Aperture Academy </div>
+                <div><img src="img/logoaperture.png" class="logo"></div>
             </div>
             <div>
                 <form>
@@ -34,29 +45,39 @@
                     <input type="button" id="buscador" value="Buscar">
                 </form>
             </div>
-            <div id="carrito">0<img src="img/carrito%202.png"></div>
+            <div id="carrito"><div id="acumulador"></div><img src="img/carrito%202.png"></div>
         </header>
 
         <nav>
             <div class="menuprincipal">
-                <a href="Home.html">Home</a>
-                <a href="Cursos.html">Cursos</a>
-                <a href="Calendario.html">Calendario</a>
-                <a href="Gift-Card.html">Gift Card</a>
-                <a href="Inscripcion.html">Inscripción</a>
-                <a href="Contacto.html">Contacto</a>
+                <div id="iconoMenu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <a class="menu" href="Home.html">Home</a>
+                <a class="menu" href="Cursos.html">Cursos</a>
+                <a class="menu" href="Calendario.html">Calendario</a>
+                <a class="menu" href="gift-card.html">Gift Card</a>
+                <a class="menu" href="inscripcion.html">Inscripción</a>
+                <a class="menu" href="Contacto.html">Contacto</a>
                 <form id="buscadorWeb">
                     <input type="search" class="buscar" placeholder="Buscar">
-                    <input type="button" id="buscador" value="Buscar">
+                    <input type="button" id="buscadorBoton" value="Buscar">
                 </form>
             </div>
         </nav>
 
-        <div class="imagen">
-            <img src="img/compu2.jpg">
-        </div>
-
-        <br>
+            <section class="contenedor">
+                <article class="slider-wrapper theme-default">
+                    <div id="slider" class="nivoSlider">
+                        <a href="Cursos.html"><img src="img/compu2.jpg" alt="General" title="Contamos con una amplia oferta de cursos para que puedas aprender y desarrolarte"/></a>
+                        <a href="cursos/Curso-HTML.html"><img src="img/slidehtml.jpg" alt="HTML" title="HTML: armá tu primera página web con las mejores herramientas" /></a>
+                        <a href="cursos/Curso-illustrator.html"><img src="img/slideillustrator.jpg" alt="Illustrator" title="ILLUSTRATOR: aprendé a usar esta gran herramienta de Diseño"/></a>
+                        <a href="cursos/Curso-Word.html"><img src="img/slideword.jpg" alt="Word" title="WORD: empezá de cero y terminá como un experto" /></a>
+                    </div>
+                </article>
+            </section>
 
         <section class="cajaPasos">
             <div class="pasos"> PASO 1:
@@ -82,7 +103,7 @@
                 <p class="hora">25 hs</p>
                 <a class="detalles" href="cursos/Curso-HTML.html">Ver detalles</a>
                 <form action="Inscripcion.html">
-                    <input type="submit" class="comprar" value="Comprar">
+                    <input type="button" class="comprar" value="Comprar">
                 </form>
             </div>
 
@@ -92,7 +113,7 @@
                 <p class="hora">18 hs</p>
                 <a class="detalles" href="cursos/Curso-photoshop.html">Ver detalles</a>
                 <form action="Inscripcion.html">
-                    <input type="submit" class="comprar" value="Comprar">
+                    <input type="button" class="comprar" value="Comprar">
                 </form>
             </div>
 
@@ -102,7 +123,7 @@
                 <p class="hora">108 hs</p>
                 <a class="detalles" href="cursos/Curso-Java.html">Ver detalles</a>
                 <form action="Inscripcion.html">
-                    <input type="submit" class="comprar" value="Comprar">
+                    <input type="button" class="comprar" value="Comprar">
                 </form>
             </div>
         </section>

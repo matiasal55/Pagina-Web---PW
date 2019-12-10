@@ -7,6 +7,14 @@
         <meta name="keywords" content="curso">
         <link rel="stylesheet" href="Css/EstilosPrincipal.css">
         <link rel="stylesheet" href="Css/EstilosCalendario.css">
+        <link href="Css/fullcalendar.min.css" rel='stylesheet' />
+        <link href="Css/fullcalendar.print.min.css" rel='stylesheet' media='print' />
+        <script src="js/moment.min.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/fullcalendar.min.js"></script>
+        <script type="text/javascript" src="js/calendario.js"></script>
+        <script type="text/javascript" src="js/menuresponsive.js"></script>
+        <script type="text/javascript" src="js/carrito.js"></script>
         <link rel="shortcut icon" type="image/x-icon" href="img/logo1.ico">
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     </head>
@@ -15,8 +23,7 @@
 
         <header>
             <div class="ladoi">
-                <div><img src="img/logo.png" class="logo"></div>
-                <div class="titulo"> Aperture Academy </div>
+                <div><img src="img/logoaperture.png" class="logo"></div>
             </div>
             <div>
                 <form>
@@ -34,27 +41,30 @@
                     <input type="button" id="buscador" value="Buscar">
                 </form>
             </div>
-            <div id="carrito">0<img src="img/carrito%202.png"></div>
+            <div id="carrito"><div id="acumulador"></div><img src="img/carrito%202.png"></div>
         </header>
 
         <nav>
             <div class="menuprincipal">
-                <a href="Home.html">Home</a>
-                <a href="Cursos.html">Cursos</a>
-                <a href="Calendario.html">Calendario</a>
-                <a href="Gift-Card.html">Gift Card</a>
-                <a href="Inscripcion.html">Inscripción</a>
-                <a href="Contacto.html">Contacto</a>
+                <div id="iconoMenu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <a class="menu" href="Home.html">Home</a>
+                <a class="menu" href="Cursos.html">Cursos</a>
+                <a class="menu" href="Calendario.html">Calendario</a>
+                <a class="menu" href="gift-card.html">Gift Card</a>
+                <a class="menu" href="inscripcion.html">Inscripción</a>
+                <a class="menu" href="Contacto.html">Contacto</a>
                 <form id="buscadorWeb">
                     <input type="search" class="buscar" placeholder="Buscar">
-                    <input type="button" id="buscador" value="Buscar">
+                    <input type="button" id="buscadorBoton" value="Buscar">
                 </form>
             </div>
         </nav>
 
-        <div class="imagen">
-            <img src="img/calendario.jpg">
-        </div>
+        <div id='calendar'></div>
 
         <footer>
             <div id="Integrantes">
